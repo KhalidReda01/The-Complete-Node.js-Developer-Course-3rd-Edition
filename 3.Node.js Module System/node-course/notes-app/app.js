@@ -4,6 +4,8 @@ console.log(getNotes())
 // console.log(validator.isEmail('khalid@gmail.com'))
 // console.log(validator.isURL('https://mead.io'))
 
+const showMessage = require('chalk');
+console.log(showMessage.green('Sucess'))
 // Challenge Time 
 /**
  * Use The Chalk library in your Project 
