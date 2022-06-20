@@ -1,0 +1,9 @@
+Section 2 Installing and Exploring Node.js
+lecture 1 Section Intro 
+-Introduction to this section
+-Getting my machine setting up for the class 
+Lecture 2 Installing Node.js and Visual Studio Code
+-node.js.org 
+-
+-
+-
