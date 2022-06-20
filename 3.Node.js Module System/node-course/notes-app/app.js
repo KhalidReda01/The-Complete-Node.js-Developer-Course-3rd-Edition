@@ -7,4 +7,5 @@ const fs=require('fs')
 // 1.use appendFileSync to append to the file
 // 2.run the script
 // 3.check your work by opening the file and viewing the appended text 
-fs.writeFileSync('my notes.txt', "Okay we will see this new message at the new file")
+// fs.writeFileSync('my notes.txt', "I'm khalid I live in Mansura. ")
+fs.writeFileSync('my notes.txt', ' OMG It\'s rewrite the code  not append it  ')
