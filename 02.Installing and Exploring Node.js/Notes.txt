@@ -4,6 +4,12 @@ lecture 1 Section Intro
 -Getting my machine setting up for the class 
 Lecture 2 Installing Node.js and Visual Studio Code
 -node.js.org 
--
--
--
+-Terminal 
+-- node -v
+-code.visualstudio.com
+Lecture 3 What is node.js
+Bla Bla Bla exist at the pdf 
+process
+process.exit()
+Lecture 4 Why should I use Node.js
+Lecture 5 Your First Node.js Script
