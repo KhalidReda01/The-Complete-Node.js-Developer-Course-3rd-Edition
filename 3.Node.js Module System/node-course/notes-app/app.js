@@ -1,8 +1,8 @@
 const fs=require('fs')
 
-// fs.writeFileSync('notes.txt', 'My name is Khalid.');
+fs.writeFileSync('notes.txt', 'My name is Khalid.');
 
-fs.writeFileSync('notes.txt', ' I live in Mansura.')
+fs.appendFileSync('notes.txt', ' I live in Mansura.')
 
 // Challenge Time 
 // Append a message to notes.txt any message Khalid actually It's the same thing 
