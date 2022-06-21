@@ -18,8 +18,15 @@ yargs.command({
 yargs.command({
   command: 'remove',
   describe: 'Remove a note',
-  handler: function () {
-    console.log('Removing the note')
+  builder: {
+    title: {
+      describe: 'Note title',
+      demandOption: true,
+      type:'string'
+    }
+  },
+  handler: function (argv) {
+    console.log('Removing the note',argv)
   }
 })
 // create read command
@@ -47,5 +54,8 @@ yargs.command({
  * 2. setup command to support "read" command (Print placeholder message for now)
  * 3. Test your work by runing both commands and ensure correct output
  */
-console.log(yargs.argv)
+
+yargs.parse()
+
+// console.log(yargs.argv)
 
