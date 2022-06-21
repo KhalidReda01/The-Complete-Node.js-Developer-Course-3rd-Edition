@@ -23,10 +23,17 @@ yargs.command({
       describe: 'Note title',
       demandOption: true,
       type:'string'
+    },
+    note: {
+      describe: 'this is the note from challenge',
+      demandOption: true,
+      type:'string'
     }
   },
   handler: function (argv) {
-    console.log('Removing the note',argv)
+   
+    console.log('Title',argv.title)
+    console.log('Note',argv.note)
   }
 })
 // create read command
@@ -47,12 +54,12 @@ yargs.command({
 })
 // add,remove,read,list
 /**
- * Challenge Time
- * Challenge : Add two new commands
- * 
- * 1. setup command to support "list" command (Print placeholder messsage for now)
- * 2. setup command to support "read" command (Print placeholder message for now)
- * 3. Test your work by runing both commands and ensure correct output
+ * Challenge Time 
+ * add an option to yargs  
+ * 1.setup a body option for the add command 
+ * 2.configure a description,make it required and for it to be a string 
+ * 3.log the body value in the  handler function
+ * 4.Test your work 
  */
 
 yargs.parse()
