@@ -22,6 +22,22 @@ yargs.command({
     console.log('Removing the note')
   }
 })
+// create read command
+yargs.command({
+  command: 'read',
+  describe: 'Read a note',
+  handler: function () {
+    console.log('Reading the note')
+  }
+})
+// creat list command
+yargs.command({
+  command: 'list',
+  describe: 'List a note',
+  handler: function () {
+    console.log('Listing the note')
+  }
+})
 // add,remove,read,list
 /**
  * Challenge Time
