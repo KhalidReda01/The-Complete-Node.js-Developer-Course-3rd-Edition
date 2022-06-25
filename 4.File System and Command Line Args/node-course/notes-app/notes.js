@@ -23,16 +23,23 @@ const addNote = function (title,body) {
 }
 const removeNote = function (title) {
   const notes = loadNotes()
-  const removedNotes = notes.filter(function (note) {
-    if (note.title === title) {
-      console.log(chalk.bgGreen('note removed!'))
-    } else if(note.title!==title) {
-      console.log(chalk.bgRed('no note found!'))
-    }
+  const notesToKeep = notes.filter(function (note) {
+    // if (note.title === title) {
+    //   console.log(chalk.bgGreen('note removed!'))
+    // } else if(note.title!==title) {
+    //   console.log(chalk.bgRed('no note found!'))
+    // }
     return note.title !== title
    
   })
-  saveNotes(removedNotes)
+  if (notes.length > notesToKeep.length) {
+    console.log(chalk.bgGreen('note removed!'))
+    saveNotes(notesToKeep)
+
+  } else  {
+    console.log(chalk.bgRed('no note found!'))
+  }
+  saveNotes(notesToKeep)
   // console.log(chalk.blue('removedTitle is '+title))
 }
 const saveNotes = function (notes) {
