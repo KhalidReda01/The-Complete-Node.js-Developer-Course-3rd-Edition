@@ -51,3 +51,12 @@ yargs.command({
 })
 // console.log(yargs.argv)
 yargs.parse()
+
+/**
+ * Challenge Time
+ * 1.setup the remove command to take a required --title option
+ * 2.create and export a removeNote function from notes.js
+ * 3.call removeNote in remove command hanlder
+ * 4.have removeNote  log the title of the note to be removed
+ * 5.test your work using: node app.js remove --title ='some title'
+ */
