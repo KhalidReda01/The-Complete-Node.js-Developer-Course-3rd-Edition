@@ -1,6 +1,12 @@
-const book = {
-  title: 'Ego is the Enemy',
-  author:'Ryan Holiday'
-}
-const bookJSON = JSON.stringify(book)
-console.log(bookJSON)
+const fs= require('fs')
+// const book = {
+//   title: 'Ego is the Enemy',
+//   author:'Ryan Holiday'
+// }
+// const bookJSON = JSON.stringify(book)
+// fs.writeFileSync('1-json.json',bookJSON)
+
+const dataJSON = fs.readFileSync('1-json.json', {encoding:'utf8', flag:'r'})
+console.log(dataJSON)
+const data = JSON.parse(dataJSON)
+console.log(data)
