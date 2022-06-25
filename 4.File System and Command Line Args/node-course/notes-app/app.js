@@ -68,3 +68,11 @@ yargs.parse()
  * 4.have removeNote  log the title of the note to be removed
  * 5.test your work using: node app.js remove --title ='some title'
  */
+
+/**
+ * Challenge Time 2
+ * 1.load existing notes
+ * 2.use array filter  method to remove the matching note (if any)
+ * 3.save the newly created away
+ * 4.test your work with a title that exist and a title that doesn't exist
+ */ 

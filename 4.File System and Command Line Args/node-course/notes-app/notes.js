@@ -9,7 +9,10 @@ const addNote = function (title,body) {
   })
   console.log(notes)
   if (duplicateNotes.length===0) {
-    
+    notes.push({
+      title: title,
+      body:body
+    })
     console.log('New note added!')
   } else {
     console.log('Note title taken!')
