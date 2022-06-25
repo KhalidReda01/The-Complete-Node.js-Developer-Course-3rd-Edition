@@ -13,6 +13,7 @@ const addNote = function (title,body) {
       title: title,
       body:body
     })
+    saveNotes(notes)
     console.log('New note added!')
   } else {
     console.log('Note title taken!')
