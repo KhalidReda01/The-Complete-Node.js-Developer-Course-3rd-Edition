@@ -75,4 +75,10 @@ yargs.parse()
  * 2.use array filter  method to remove the matching note (if any)
  * 3.save the newly created away
  * 4.test your work with a title that exist and a title that doesn't exist
- */ 
+ */
+/**
+ * challenge Time 3
+ *  challenge : use chalk to provide useful logs for remove
+ *  1.if a note is removed print note removed! with a green background
+ *  2.if no note is removed print no note found! with a red background
+ */
