@@ -6,3 +6,6 @@ const book = {
 const bookJSON = JSON.stringify(book)
 console.log(book)
 console.log(bookJSON)
+
+const parseData = JSON.parse(bookJSON)
+console.log(parseData)
