@@ -54,7 +54,13 @@ yargs.command({
 yargs.command({
     command: 'read',
     describe: 'Read a note',
-    handler() {
+    builder: {
+        describe: 'Read a note',
+        demandOption: 'true',
+        type:'string'
+    },
+    handler(argv) {
+    notes.readNote(argv.title)
         console.log('Reading a note')
     }
 })
@@ -93,11 +99,22 @@ yargs.parse()
  */
 /**
  * Challenge Time Lecture 23 Listing Notes 
- * Goal: wire up lis command
+ * Goal: wire up list command
  * 1. create and export listNotes from notes.js
  *   -"Your noes using chalk"
  *   -Print note title for each note
  * 2. Call ListNotes from command handler
  * 3. Test your work
+ * 
+ */
+/**
+ *  Challenge Time Lecture 24 Reading a note
+ *  Goal :wire up read command
+ *  1.setup --title option for read command
+ *  2.create readNote in notes.js
+ *   - search for note by title
+ *   - find note and print title (styled) and body (plain)
+ * 3. Have the command hanlder call the function
+ * 4. Test your work by runing a couple commands
  * 
  */

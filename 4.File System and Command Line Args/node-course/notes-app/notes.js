@@ -41,6 +41,10 @@ const listNotes = () => {
     console.log(note.title)
   })
 }
+const readNote = (title) => {
+  const notes = loadNotes()
+  noteToRead=notes.find((note)=>note.title===title)
+}
 const saveNotes = (notes)=> {
   const dataJSON = JSON.stringify(notes)
   fs.writeFileSync('notes.json',dataJSON)
@@ -60,5 +64,6 @@ module.exports = {
   getNotes: getNotes,
   addNote: addNote,
   removeNote: removeNote,
-  listNotes:listNotes
+  listNotes: listNotes,
+  readNote:readNote
 }
