@@ -90,3 +90,13 @@ yargs.parse()
  * 3.Test your work
  * 
  */
+/**
+ * Challenge Time Lecture 23 Listing Notes 
+ * Goal: wire up lis command
+ * 1. create and export listNotes from notes.js
+ *   -"Your noes using chalk"
+ *   -Print note title for each note
+ * 2. Call ListNotes from command handler
+ * 3. Test your work
+ * 
+ */
