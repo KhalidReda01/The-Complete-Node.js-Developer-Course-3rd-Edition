@@ -121,3 +121,4 @@ yargs.parse()
  * 4. Test your work by runing a couple commands
  * 
  */
+//chrome://inspect/#devices
