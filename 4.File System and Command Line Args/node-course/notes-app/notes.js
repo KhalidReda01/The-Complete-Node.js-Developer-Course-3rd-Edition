@@ -43,7 +43,13 @@ const listNotes = () => {
 }
 const readNote = (title) => {
   const notes = loadNotes()
-  noteToRead=notes.find((note)=>note.title===title)
+  const noteToRead = notes.find((note) => note.title === title)
+  if (noteToRead) {
+    console.log(chalk.blue(title))
+    console.log(chalk.bgGreen(noteToRead.body))
+  } else {
+    console.log(chalk.red('No Note found'))
+  }
 }
 const saveNotes = (notes)=> {
   const dataJSON = JSON.stringify(notes)
