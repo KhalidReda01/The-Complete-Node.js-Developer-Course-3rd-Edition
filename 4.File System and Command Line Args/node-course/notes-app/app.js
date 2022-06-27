@@ -82,3 +82,11 @@ yargs.parse()
  *  1.if a note is removed print note removed! with a green background
  *  2.if no note is removed print no note found! with a red background
  */
+
+/**
+ * Challenge Time Lecture 22 Refactoring to use arrow functions
+ * 1.If function is a method , use Es6 method defination syntax
+ * 2.Otherwise, use most concise arrow function possible
+ * 3.Test your work
+ * 
+ */
